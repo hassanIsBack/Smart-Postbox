@@ -4,11 +4,11 @@
 BlynkTimer timer;
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "58f2b4c03933480abbac207fd9608ad8";
+char auth[] = "YOUR AUTH";
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Telia-D08771";
-char pass[] = "C9B547ACB2";
+char ssid[] = "YOUR WIFI SSID";
+char pass[] = "YOUR WIFI PASSWORD";
 int flag=0;
 //ADC_MODE(ADC_VCC); //define the analog pin
 void notifyOnButtonPress()
@@ -21,7 +21,7 @@ void notifyOnButtonPress()
     //int voltage = ESP.getVcc()/10;
     Blynk.notify("Post: you got a post just now!");
     //String stringMail = "Got a post!";
-    //Blynk.email("liaquath_amms@yahoo.com", "From Blynk", stringMail);
+    //Blynk.email("YOUR EMAIL ADDRESS", "From Blynk", stringMail);
     flag=1;
   }
   else if (isButtonPressed==0)
